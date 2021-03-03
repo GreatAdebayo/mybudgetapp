@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUDGET APP</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head> 
+<body>
+    <div class="container">
+
+        <div class="container">
+        <div class="jumbotron" style="background-color:tomato; border-style: solid; border-color:white;
+       ">
+          <h1 style="color: #EEEEEE; font-weight: bold;">BudgetIT</h1>      
+          <p style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">Your Budget App.</p>
+         <p style="text-align: right;"><a href="Budget2.html" style="text-decoration: none; font-size: 18px; color:#EEEEEE;font-family: 'Courier New', Courier, monospace; font-weight: bold;">View Budget History!</a></p>
+        </div>
+
+
+
+        <div class="container">
+
+<h3 style="text-align: right; color:#1A73E8; font-weight: bold; margin-right:22px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size: 30px;" id="redo" >BUDGET BAL: <span> $<input id="estamt" style="border: none; width: 20%; outline: none;" readonly></span></h3>
+
+
+
+<button type="submit" class="btn btn-primary" style="font-weight: bold; outline:none; border-color: tomato; height: 40px; width:20%;font-size:15px;color: tomato; background-color: #EEEEEE;" onclick="createBudget()" >CREATE A NEW BUDGET!</button>
+
+<br><br>
+
+<div style="visibility: hidden;" id="budbody">
+  
+    <h2>Start a New Budget:</h2>
+    <form>
+      <div class="form-group">
+        <label for="bId" style="color:#1A73E8;font-size: 17px; font-family: 'Courier New', Courier, monospace;">Budget ID:</label>
+        <input type="number" class="form-control" id="bId" style="width:30%;" placeholder="Budget ID">
+      </div>
+      <div class="form-group">
+        <label for="day" style="color:#1A73E8;font-size: 17px; font-family: 'Courier New', Courier, monospace;">New Budget Date:</label>
+        <input type="date" class="form-control" id="day" style="width:30%;" placeholder="Enter Name of Item Bought">
+      </div> <br>
+
+      <div class="form-group">
+        <label for="amt" style="color:#1A73E8; font-size:17px; font-family: 'Courier New', Courier, monospace;" >Est Budget Amount:</label>
+        <input type="number" class="form-control" id="amt" placeholder="Enter Amount to be Budgeted" name="pswd" style="width:30%;">
+      </div>
+      
+    
+     
+    </form>
+    <button type="submit" class="btn btn-primary" style="font-weight: bold;background-color: #1A73E8; outline-color:#1A73E8; border: none;" onclick="startBudget()" >Start Budget!</button>
+
+
+        </div>
+        
+<br> <br>
+        <div style="margin-left:570px; margin-top:-390px;">
+            <h2>Expenses:</h2>
+            <form>
+              <div class="form-group">
+                <label for="day" style="color:#1A73E8;font-size: 17px; font-family: 'Courier New', Courier, monospace;">Name of Item Bought:</label>
+                <input type="text" class="form-control" id="bought" style="width:60%;" placeholder="Enter Name of Item Bought" >
+              </div> <br>
+        
+              <div class="form-group">
+                <label for="amt" style="color:#1A73E8; font-size:17px; font-family: 'Courier New', Courier, monospace;" >Amount:</label>
+                <input type="number" class="form-control" id="amt1" placeholder="Enter Amount Spent"  style="width:60%;">
+              </div>
+              
+            
+             
+            </form>
+            <button type="submit" class="btn btn-primary" style="font-weight: bold;background-color: tomato; outline-color: tomato; border: none;" onclick="saveExpenses()">Save Expenses!</button>
+       
+        
+                </div>
+<br> <br> <br> <br> <br> <br> <br> <br> 
+
+        
+
+
+        
+            
+      </div>  
+
+      <div class="jumbotron" style="height: 20px;
+                   ">
+                         
+                      <p style="font-weight: bold; font-family: 'Courier New', Courier, monospace; text-align: center;">Designed by GREAT with <span style="color: tomato;">Love</span> in SQI.</p>
+                      
+        </div>
+
+
+    <script src="Budget.js"></script>
+</body>
+</html>

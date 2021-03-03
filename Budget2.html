@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUDGET APP</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="container">
+        <div class="jumbotron" style="background-color:tomato; border-style: solid; border-color:white;">
+          <h1 style="color: #EEEEEE; font-weight: bold;">BudgetIT</h1>      
+          <p style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">Your Budget App.</p>
+          <p style="text-align: right;"><a href="Budget1.html" style="text-decoration: none; font-size: 18px; color:#EEEEEE;font-family: 'Courier New', Courier, monospace; font-weight: bold;">Back to My Budget!</a></p>
+        </div>
+
+        </div>
+
+
+        <div>
+
+
+            <h3 style=" color:#1A73E8; font-weight: bold;  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size: 30px;">Budget History </h3>
+            <br>
+
+      <form>
+        <div class="form-group">
+          <label for="Bid" style="color:#1A73E8;font-size: 17px; font-family: 'Courier New', Courier, monospace;">Budget ID:</label>
+          <input type="number" class="form-control" style="width:30%;" placeholder="Enter Budget ID" id="prop">
+        </div> 
+
+        </form>
+
+        <button type="submit" class="btn btn-primary" style="font-weight: bold;background-color:tomato; border-color:tomato; color:white; outline-color:tomato;" onclick="viewExp()">View Expenses!</button>
+
+<br> <br>
+<p style="font-size: 25px; color:#1A73E8; font-family: 'Courier New', Courier, monospace; font-weight: bold; visibility: hidden;" id="b1">Budget Amount:<span>$</span><span id="pee1"></span></p> 
+<p style="font-size: 25px; color:#1A73E8; font-family: 'Courier New', Courier, monospace; font-weight: bold; visibility: hidden;" id="b2">Budget Date:<span id="pee"></span></p> 
+
+<p style="font-size: 25px; color:#1A73E8; font-family: 'Courier New', Courier, monospace; font-weight: bold;">Expenses:</p> 
+
+
+        <table class="table table-bordered table-striped">
+    
+<thead>
+            <tr>
+            
+              <th>S/N</th>
+              <th>Item Bought</th>
+              <th>Amount Spent</th>
+             
+            </tr>
+          </thead>
+      
+          <tbody id="tab">
+        
+      
+          </tbody>
+      
+        </table>
+
+        <br> <br>
+        
+        <p style="font-size: 25px; color: tomato; font-family: 'Courier New', Courier, monospace; font-weight: bold; visibility: hidden;" id="b3">Total Amount Spent:<span id="pee2"></span></p> 
+
+
+        <p style="font-size: 25px; color:#1A73E8; font-family: 'Courier New', Courier, monospace; font-weight: bold; visibility: hidden;" id="b5">Remarks:<span id="pee3"></span></p> 
+<br> <br> <br>
+
+
+
+<button type="submit" class="btn btn-primary" style="font-weight: bold; outline:none; border-color: tomato; height: 40px; width:15%;font-size:15px;color: tomato; background-color: #EEEEEE; visibility: hidden;" onclick="printit()" id="b4">PRINT HISTORY!</button><br> <br> <br>
+
+
+
+</div>
+
+        
+
+
+      
+    
+    
+
+<div class="jumbotron" style="height: 20px;">
+                         
+<p style="font-weight: bold; font-family: 'Courier New', Courier, monospace; text-align: center;">Designed by GREAT with <span style="color: tomato;">Love</span> in SQI.</p>
+                      
+</div>
+
+
+
+        
+            
+    </div> 
+
+    <script src="Budget.js"></script>
+</body>
+</html>
